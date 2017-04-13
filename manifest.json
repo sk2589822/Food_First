@@ -1,0 +1,22 @@
+{
+    "manifest_version": 2,
+	"icons": {"128": "images/bentou.png"},
+    "name": "民以食為天",
+    "description": "假崩轟得ㄉㄨㄚ",
+    "version": "1.2.0",
+    "browser_action":
+    {
+        "default_icon": "images/bentou.png",
+        "default_popup": "popup.html"
+    },
+	"background" : {
+        "scripts" : ["alarm.js"],
+        "persistent" : true
+    },
+	"permissions" : [
+        "alarms",
+		"tabs",
+		"notifications",
+		"storage"
+    ]
+}
